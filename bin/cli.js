@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const {Command} = require('commander');
 const {EnvManager} = require('..');
+const {Command} = require('commander');
 const {red, green, cyan} = require('colorette');
 
 const program = new Command();
@@ -12,11 +12,9 @@ const program = new Command();
  * Sets the name, description, and version of the program.
  */
 program
-
-
     .name('env')
     .summary('A CLI tool for managing .env files')
-// eslint-disable-next-line max-len
+    // eslint-disable-next-line max-len
     .description('A CLI tool designed for easy management of environment variables. It enables the generation, update, and management of .env files to maintain consistent project configurations across various development environments. With env, users can create .env files from templates, synchronize changes, and securely manage sensitive information, catering to both small and large-scale projects.')
     .version('1.0.0');
 
