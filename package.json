@@ -1,13 +1,13 @@
 {
   "name": "@zigatech/env-manager",
   "version": "0.0.0-semantic-release",
-  "description": "A cli npm package",
+  "description": "A CLI tool for managing .env files",
   "main": "./src/index.js",
   "bin": {
     "env": "./bin/cli.js"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint --fix **/*.[c]js",
+    "lint": "eslint --fix **/*.[c]js",
     "prepare": "husky"
   },
   "keywords": [

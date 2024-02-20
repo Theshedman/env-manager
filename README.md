@@ -1,6 +1,6 @@
 # @zigatech/env-manager
 
-A CLI npm package designed to provide a simple command-line interface for your needs.
+A powerful and user-friendly CLI tool designed to streamline the management of environment variables for your projects. It allows you to easily generate, update, and manage .env files, ensuring that your project configurations are consistent across different development environments. With env, you can create .env files from templates, synchronize changes across multiple .env files, and securely manage sensitive information. Whether you are working on a small project or a large-scale application, env provides the tools you need to efficiently handle your environment variables.
 
 ## Table of Contents
 - [Installation](#installation)

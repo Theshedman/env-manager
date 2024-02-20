@@ -2,7 +2,7 @@
 
 const {Command} = require('commander');
 const {EnvManager} = require('../src');
-const {red, green, cyan} = require('colorette' );
+const {red, green, cyan} = require('colorette');
 
 const program = new Command();
 
@@ -15,7 +15,9 @@ program
 
 
     .name('env')
-    .description('A tool for managing .env and .env.sample files')
+    .summary('A CLI tool for managing .env files')
+// eslint-disable-next-line max-len
+    .description('A CLI tool designed for easy management of environment variables. It enables the generation, update, and management of .env files to maintain consistent project configurations across various development environments. With env, users can create .env files from templates, synchronize changes, and securely manage sensitive information, catering to both small and large-scale projects.')
     .version('1.0.0');
 
 /**
@@ -59,20 +61,6 @@ program
       // Catch and log any errors that occur during generation
           .catch((error) => console.error(red(`Failed to generate sample .env: ${error.message}`)));
     });
-
-// Configure the help command
-program.helpInformation = () => {
-  return `
-    Usage: env <command> [options]
-
-    Options:
-      -h, --help     Display help for command
-
-    Commands:
-      main           Generate main .env file
-      sample         Generate sample .env file
-  `;
-};
 
 // Customizes CLI output for better readability.
 program
