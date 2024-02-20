@@ -1,0 +1,56 @@
+{
+  "name": "@zigatech/env-manager",
+  "version": "0.0.0-semantic-release",
+  "description": "A cli npm package",
+  "main": "./src/index.js",
+  "bin": {
+    "env": "./bin/cli.js"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --fix **/*.[c]js",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "cli",
+    "env",
+    "manager",
+    "environment"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "npm@10.2.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theshedman/env-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Theshedman/env-manager/issues"
+  },
+  "homepage": "https://github.com/Theshedman/env-manager#readme",
+  "release": {
+    "branches": [
+      {
+        "name": "main"
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
+    "ci": true,
+    "repositoryUrl": "https://github.com/Theshedman/env-manager",
+    "tagFormat": "v${version}"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "colorette": "^2.0.20",
+    "commander": "^12.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^9.0.11"
+  }
+}
