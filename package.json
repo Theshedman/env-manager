@@ -2,7 +2,7 @@
   "name": "@zigatech/env-manager",
   "version": "0.0.0-semantic-release",
   "description": "A CLI tool for managing .env files",
-  "main": "./src/index.js",
+  "main": "index.js",
   "bin": {
     "env": "./bin/cli.js"
   },

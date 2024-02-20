@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const {Command} = require('commander');
-const {EnvManager} = require('../src');
+const {EnvManager} = require('..');
 const {red, green, cyan} = require('colorette');
 
 const program = new Command();
